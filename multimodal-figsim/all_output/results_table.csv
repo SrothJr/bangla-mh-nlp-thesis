@@ -1,0 +1,8 @@
+approach,model,task,split,n,accuracy,macro_f1,weighted_f1,qwk,quotable
+best_outcome,Cross-architecture ensemble,5-class,test,196,0.5306,0.4984,0.5232,0.3857,YES - LEAD WITH THIS
+best_outcome,"Same, collapsed to 3 classes",3-class,test,196,0.6582,0.6024,0.6532,,yes - best 3-class-equivalent
+approach_01,Single-model baseline,5-class,test,196,0.5051,0.4753,0.4953,0.3732,yes - starting point
+approach_02,Native 3-class model,3-class,test,196,0.6071,0.5730,0.6126,0.3765,yes - on its own terms
+approach_03,DAPT-BanglaBERT depression,4-class,own dataset,4897,0.9320,0.9182,0.9308,,yes - WITH training-overlap caveat
+approach_05,Best with depression features,3-class,cross-validation,777,0.6873,0.6397,,,CV only - never tested
+approach_06,Best with dual encoders,3-class,cross-validation,777,0.6834,0.6380,,,CV only - never tested

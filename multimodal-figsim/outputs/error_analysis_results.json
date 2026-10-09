@@ -1,0 +1,31 @@
+{
+  "by_modality": {
+    "Complementary": {
+      "n": 178,
+      "macro_f1": 0.4965555253917747,
+      "accuracy": 0.5224719101123596
+    },
+    "Text": {
+      "n": 13,
+      "macro_f1": 0.2,
+      "accuracy": 0.38461538461538464
+    },
+    "Image": {
+      "n": 5,
+      "macro_f1": 0.1,
+      "accuracy": 0.2
+    }
+  },
+  "by_context": {
+    "No-context-required": {
+      "n": 171,
+      "macro_f1": 0.43397979172627055,
+      "accuracy": 0.49707602339181284
+    },
+    "Context-required": {
+      "n": 25,
+      "macro_f1": 0.30222222222222217,
+      "accuracy": 0.56
+    }
+  }
+}

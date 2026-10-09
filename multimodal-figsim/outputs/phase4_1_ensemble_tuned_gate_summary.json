@@ -1,0 +1,5 @@
+{
+  "_source": "Value printed by code/phase4_1_ensemble_with_tuned_gate.py (script did not persist JSON originally); recorded here verbatim from console output and IMPROVEMENT_PLAN.md line 891/903 so figure generation reads from a file rather than a retyped number.",
+  "cross_arch_majority_vote_macro_f1_tuned_gate": 0.5638,
+  "comparison_phase3_locked_untuned_gate": 0.5592
+}

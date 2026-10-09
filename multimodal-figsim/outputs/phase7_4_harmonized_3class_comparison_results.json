@@ -1,0 +1,94 @@
+{
+  "variant_A_original_siglip": {
+    "seed_f1s": [
+      0.6334248235012564,
+      0.6344868193378423,
+      0.6436961393452082
+    ],
+    "majority_vote_macro_f1": 0.6424979103800984,
+    "weighted_f1": 0.6822058103965537,
+    "accuracy": 0.676923076923077,
+    "balanced_accuracy": 0.6598674521354932,
+    "classification_report": {
+      "No expressed severity": {
+        "precision": 0.4473684210526316,
+        "recall": 0.6071428571428571,
+        "f1-score": 0.5151515151515151,
+        "support": 28.0
+      },
+      "Suicidal thought or desire": {
+        "precision": 0.7640449438202247,
+        "recall": 0.7010309278350515,
+        "f1-score": 0.7311827956989247,
+        "support": 97.0
+      },
+      "High acuity suicidal content": {
+        "precision": 0.6911764705882353,
+        "recall": 0.6714285714285714,
+        "f1-score": 0.6811594202898551,
+        "support": 70.0
+      },
+      "accuracy": 0.676923076923077,
+      "macro avg": {
+        "precision": 0.6341966118203638,
+        "recall": 0.6598674521354932,
+        "f1-score": 0.6424979103800984,
+        "support": 195.0
+      },
+      "weighted avg": {
+        "precision": 0.6924155296472408,
+        "recall": 0.676923076923077,
+        "f1-score": 0.6822058103965537,
+        "support": 195.0
+      }
+    }
+  },
+  "variant_B_bnhib_pretrained_siglip": {
+    "seed_f1s": [
+      0.6242940685045948,
+      0.632941213375996,
+      0.6271891398495808
+    ],
+    "majority_vote_macro_f1": 0.6362705411944347,
+    "weighted_f1": 0.693030698655921,
+    "accuracy": 0.6923076923076923,
+    "balanced_accuracy": 0.6363033873343151,
+    "classification_report": {
+      "No expressed severity": {
+        "precision": 0.43333333333333335,
+        "recall": 0.4642857142857143,
+        "f1-score": 0.4482758620689655,
+        "support": 28.0
+      },
+      "Suicidal thought or desire": {
+        "precision": 0.7352941176470589,
+        "recall": 0.7731958762886598,
+        "f1-score": 0.7537688442211056,
+        "support": 97.0
+      },
+      "High acuity suicidal content": {
+        "precision": 0.746031746031746,
+        "recall": 0.6714285714285714,
+        "f1-score": 0.706766917293233,
+        "support": 70.0
+      },
+      "accuracy": 0.6923076923076923,
+      "macro avg": {
+        "precision": 0.6382197323373794,
+        "recall": 0.6363033873343151,
+        "f1-score": 0.6362705411944347,
+        "support": 195.0
+      },
+      "weighted avg": {
+        "precision": 0.6957901793195912,
+        "recall": 0.6923076923076923,
+        "f1-score": 0.693030698655921,
+        "support": 195.0
+      }
+    }
+  },
+  "delta_B_minus_A": -0.006227369185663689,
+  "step1_diagnostic_reference": 0.6394,
+  "five_class_baseline_reference": 0.5638,
+  "decision": "not kept -- BN-HIB pretraining did not help FigSIM's own task"
+}

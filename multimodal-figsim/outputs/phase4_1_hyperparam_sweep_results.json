@@ -1,0 +1,74 @@
+{
+  "default": {
+    "config": {
+      "hidden_dim": 256,
+      "dropout": 0.2,
+      "lr": 0.001,
+      "weight_decay": 0.0001
+    },
+    "majority_vote_macro_f1": 0.5329918820355589
+  },
+  "hidden_dim=128": {
+    "config": {
+      "hidden_dim": 128,
+      "dropout": 0.2,
+      "lr": 0.001,
+      "weight_decay": 0.0001
+    },
+    "majority_vote_macro_f1": 0.5192575664439201
+  },
+  "hidden_dim=512": {
+    "config": {
+      "hidden_dim": 512,
+      "dropout": 0.2,
+      "lr": 0.001,
+      "weight_decay": 0.0001
+    },
+    "majority_vote_macro_f1": 0.513823836415426
+  },
+  "dropout=0.1": {
+    "config": {
+      "hidden_dim": 256,
+      "dropout": 0.1,
+      "lr": 0.001,
+      "weight_decay": 0.0001
+    },
+    "majority_vote_macro_f1": 0.5260884340772741
+  },
+  "dropout=0.4": {
+    "config": {
+      "hidden_dim": 256,
+      "dropout": 0.4,
+      "lr": 0.001,
+      "weight_decay": 0.0001
+    },
+    "majority_vote_macro_f1": 0.5418380502831497
+  },
+  "lr=5e-4": {
+    "config": {
+      "hidden_dim": 256,
+      "dropout": 0.2,
+      "lr": 0.0005,
+      "weight_decay": 0.0001
+    },
+    "majority_vote_macro_f1": 0.5156556932872721
+  },
+  "lr=2e-3": {
+    "config": {
+      "hidden_dim": 256,
+      "dropout": 0.2,
+      "lr": 0.002,
+      "weight_decay": 0.0001
+    },
+    "majority_vote_macro_f1": 0.5312078206743804
+  },
+  "weight_decay=1e-3": {
+    "config": {
+      "hidden_dim": 256,
+      "dropout": 0.2,
+      "lr": 0.001,
+      "weight_decay": 0.001
+    },
+    "majority_vote_macro_f1": 0.5346828609986505
+  }
+}

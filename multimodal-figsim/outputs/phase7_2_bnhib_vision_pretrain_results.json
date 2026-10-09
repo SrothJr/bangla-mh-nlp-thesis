@@ -1,0 +1,45 @@
+{
+  "dataset": "BN-HIB only (CMBAN not fully downloaded, see Step 2 audit)",
+  "n_train": 2272,
+  "n_val": 487,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_lr": 0.0001,
+  "head_lr": 0.001,
+  "best_val_macro_f1": 0.7504213787207753,
+  "classification_report": {
+    "Benign": {
+      "precision": 0.7677419354838709,
+      "recall": 0.8095238095238095,
+      "f1-score": 0.7880794701986755,
+      "support": 147.0
+    },
+    "Inflammatory": {
+      "precision": 0.7116564417177914,
+      "recall": 0.6987951807228916,
+      "f1-score": 0.7051671732522796,
+      "support": 166.0
+    },
+    "Hate": {
+      "precision": 0.7692307692307693,
+      "recall": 0.7471264367816092,
+      "f1-score": 0.7580174927113703,
+      "support": 174.0
+    },
+    "accuracy": 0.7494866529774127,
+    "macro avg": {
+      "precision": 0.7495430488108106,
+      "recall": 0.7518151423427701,
+      "f1-score": 0.7504213787207753,
+      "support": 487.0
+    },
+    "weighted avg": {
+      "precision": 0.7491564428900128,
+      "recall": 0.7494866529774127,
+      "f1-score": 0.749076954026411,
+      "support": 487.0
+    }
+  },
+  "checkpoint_path": "C:\\Users\\user6\\T2520814\\multimodal_figsim\\outputs\\checkpoints\\phase7_bnhib_siglip_lora\\best",
+  "note": "DAPT-BanglaBERT was never loaded or modified in this script -- vision-only auxiliary pretraining, per PHASE7_REVISED_PRETRAINING_PLAN.md Track A. Finalized via phase7_2b_finalize_from_checkpoint.py after the original run hung during its own wrap-up post-early-stopping (Windows DataLoader worker shutdown issue) -- the trained weights themselves were unaffected."
+}

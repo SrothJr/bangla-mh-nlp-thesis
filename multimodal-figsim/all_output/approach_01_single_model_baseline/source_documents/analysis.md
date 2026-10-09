@@ -1,0 +1,44 @@
+> ## ⚠ Read before quoting from this file
+>
+> This is a **diagnostic written early in the project**, ranking where the remaining leverage was thought to be. Several of its predictions were later tested and proved wrong, including that unfreezing the encoders would be the biggest lever and that the translation hop was costing significant signal.
+>
+> Read it for how priorities were set, not as a statement of findings.
+
+---
+
+First, a calibration point
+0.463 macro-F1 on 582 training examples across 5 imbalanced, genuinely ordinal-ambiguous classes, with both encoders frozen, isn't a broken result — it's roughly what you'd expect from this data budget. FigSIM's own paper reported that even their fine-tuned fusion models barely beat text-only, and only massive prompted MLLMs did meaningfully better. That said, there's real room to improve, and we have concrete diagnostic evidence (not guesses) pointing at where.
+
+Where the evidence points, ranked by leverage
+1. Unfreeze part of the encoders (likely the single biggest lever we haven't pulled)
+Both BanglaBERT and SigLIP are fully frozen — we only ever train small heads on top. Neither encoder has ever seen a meme, dark humor, or translated internet slang. BanglaBERT was fine-tuned on formal-ish Reddit-derived mental-health posts, not garbled OCR text passed through machine translation. Partially unfreezing the last 1-2 transformer layers of each encoder (with strong regularization and a low learning rate, since 582 examples will overfit fast if given too much freedom) lets them actually adapt to this domain instead of applying generic representations. This is a classic "transfer learning ceiling" situation — frozen encoders cap how much fusion architecture can ever compensate for a representation mismatch.
+
+2. The translation pipeline is a double lossy hop, and we've never measured how much it costs
+OCR text → NLLB translation → BanglaBERT. Two lossy steps before the classifier ever sees anything (mean OCR confidence 0.77, several visibly garbled outputs like "poeatiaun anaariure"). We chose this path for narrative consistency with Phase 2 (one Bangla encoder, two tasks), but it's worth being honest that it's a real tradeoff, not a free choice. The cheap diagnostic: compare against encoding the original English OCR/reasoning text with an English encoder — if that scores meaningfully higher, it tells us the translation hop is costing real signal, and we can decide whether the "one encoder" story is worth that cost.
+
+3. Feed the reasoning model's own uncertainty signal into the gate — we already have this data and never use it
+reasoning_results.jsonl has a boolean uncertain flag per claim (cause-effect, figurative meaning, emotional state) that the spot-check confirmed is a real, if imperfect, signal. Right now the gate only sees OCR confidence and translation confidence — the reasoning model's own self-reported confidence is sitting unused. This is nearly free to add (it's already computed) and directly addresses the exact failure mode the spot-check found (overconfident wrong narratives on image-only memes).
+
+4. Cross-attention fusion instead of a scalar gate
+The current gate produces one number α per meme that mixes two pooled vectors. That's a coarse instrument — it can't say "trust the image for this region, trust the text for that phrase." A small cross-attention block between SigLIP's patch tokens and BanglaBERT's token-level hidden states (instead of collapsing both to single vectors first) is strictly more expressive and is the mechanism most multimodal literature actually uses instead of scalar gating. This is more implementation effort than the others but is probably where the next real jump lives, especially for "Complementary" memes (90% of the data) where meaning genuinely depends on cross-referencing specific words to specific image regions.
+
+5. Class-imbalance handling beyond weighted CE
+"Suicide planning" (90 train examples, the second-smallest class) is the weak point everywhere, always bleeding into the adjacent class "Suicide ideation." Two specific things worth trying: focal loss (concentrates gradient on hard/misclassified examples more aggressively than flat class weights) and ordinal label smoothing — instead of a one-hot target, spread a little probability mass to the adjacent class(es) proportional to ordinal distance. This gets some of CORAL's "respect the ordering" benefit without CORAL's fatal flaw (the single-scalar bottleneck that starved rare classes). This is a genuinely different mechanism from CORAL, not a retry of the same idea.
+
+6. Ensemble the 3 seeds instead of picking one
+Right now we train 3 seeds and report the one with best validation score as "primary." Averaging all 3 seeds' predicted probabilities (or majority vote) instead of picking a winner is close to free — no new training, no new data — and ensembling almost always buys a couple points of macro-F1 by smoothing over the exact noise we saw between seeds (E5's seeds ranged 0.47-0.54).
+
+7. Strengthen Stage A's contrastive alignment
+Its retrieval accuracy was only ~13× chance — a real, working signal, but weak in absolute terms, and it's training on only 582 pairs. Two ways to strengthen it without new data: (a) supervised contrastive loss — pull same-class pairs together too, not just a meme's own text-image pair, which gives the alignment a task-relevant signal instead of a purely self-supervised one; (b) generate multiple augmented views per meme (paraphrase the reasoning text, lightly augment the image) to get more effective contrastive pairs from the same 582 memes. Given alignment quality is what fixed the gate once already, improving it further could compound.
+
+8. Data augmentation for the classifier heads
+582 training examples for a 5-way classifier on top of 1900-dimensional fused features is thin. Embedding-space mixup (interpolate between same-class examples) or back-translation augmentation (Bangla → English → Bangla, producing slightly different phrasings of the same meme) can meaningfully help a small trained head without touching the frozen encoders. Cheap and orthogonal to everything else on this list.
+
+9. Try CLIP after all, or a meme-tuned vision encoder
+We skipped the CLIP-vs-SigLIP comparison for time, but it's worth naming as a real option: CLIP was trained on web-scraped image-caption pairs that plausibly include meme-adjacent content, while SigLIP's training distribution is more generic. Not guaranteed to help, but cheap to test since it's a drop-in encoder swap.
+
+What I'd not prioritize
+More reasoning-model prompt engineering alone — the spot-check showed the failure mode is about grounding on ambiguous image-only content, which is an architecture/data problem more than a prompt problem.
+A second reasoning model / ensemble (E7) — expensive, and the marginal reasoning-text contribution we already measured (E3b vs E3) was small; unlikely to be the highest-leverage next move.
+Retrying CORAL in any form — its specific failure mode (capacity bottleneck) is now well understood; label smoothing (item 5) gets the ordinal benefit without that flaw.
+If you want to act on any of these, my suggestion would be 3, 6, and 5 first (all cheap, no new training infrastructure, use data we already have), then 1 (encoder unfreezing) as the higher-effort/higher-ceiling move, with 4 (cross-attention) as the real architectural upgrade if there's still runway after that.

@@ -1,0 +1,208 @@
+{
+  "E6_concat": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "macro_f1_per_seed": [
+      0.5043990757110464,
+      0.5071925094964979,
+      0.4923531884684723
+    ],
+    "macro_f1_mean": 0.5013149245586722,
+    "macro_f1_std": 0.00643870346116455,
+    "best_seed_weighted_f1": 0.5271213682717693,
+    "best_seed_accuracy": 0.5282051282051282,
+    "best_seed_confusion_matrix": [
+      [
+        13,
+        6,
+        2,
+        5,
+        2
+      ],
+      [
+        3,
+        25,
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        10,
+        36,
+        7,
+        10
+      ],
+      [
+        3,
+        5,
+        5,
+        10,
+        8
+      ],
+      [
+        2,
+        10,
+        5,
+        3,
+        19
+      ]
+    ],
+    "best_seed_classification_report": {
+      "None": {
+        "precision": 0.5652173913043478,
+        "recall": 0.4642857142857143,
+        "f1-score": 0.5098039215686274,
+        "support": 28.0
+      },
+      "Wish to be dead": {
+        "precision": 0.44642857142857145,
+        "recall": 0.78125,
+        "f1-score": 0.5681818181818182,
+        "support": 32.0
+      },
+      "Suicide ideation": {
+        "precision": 0.72,
+        "recall": 0.5538461538461539,
+        "f1-score": 0.6260869565217392,
+        "support": 65.0
+      },
+      "Suicide planning": {
+        "precision": 0.38461538461538464,
+        "recall": 0.3225806451612903,
+        "f1-score": 0.3508771929824561,
+        "support": 31.0
+      },
+      "Suicide attempt or death": {
+        "precision": 0.475,
+        "recall": 0.48717948717948717,
+        "f1-score": 0.4810126582278481,
+        "support": 39.0
+      },
+      "accuracy": 0.5282051282051282,
+      "macro avg": {
+        "precision": 0.5182522694696609,
+        "recall": 0.5218284000945291,
+        "f1-score": 0.5071925094964979,
+        "support": 195.0
+      },
+      "weighted avg": {
+        "precision": 0.5505634777708356,
+        "recall": 0.5282051282051282,
+        "f1-score": 0.5271213682717693,
+        "support": 195.0
+      }
+    },
+    "n_val": 195
+  },
+  "E6_gated_orth": {
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "macro_f1_per_seed": [
+      0.5117054699533303,
+      0.5004445862296961,
+      0.5089084109519977
+    ],
+    "macro_f1_mean": 0.507019489045008,
+    "macro_f1_std": 0.0047873371190625714,
+    "best_seed_weighted_f1": 0.5210082791180163,
+    "best_seed_accuracy": 0.5230769230769231,
+    "best_seed_confusion_matrix": [
+      [
+        11,
+        6,
+        2,
+        4,
+        5
+      ],
+      [
+        1,
+        27,
+        4,
+        0,
+        0
+      ],
+      [
+        1,
+        15,
+        33,
+        5,
+        11
+      ],
+      [
+        0,
+        5,
+        7,
+        12,
+        7
+      ],
+      [
+        2,
+        13,
+        4,
+        1,
+        19
+      ]
+    ],
+    "best_seed_classification_report": {
+      "None": {
+        "precision": 0.7333333333333333,
+        "recall": 0.39285714285714285,
+        "f1-score": 0.5116279069767442,
+        "support": 28.0
+      },
+      "Wish to be dead": {
+        "precision": 0.4090909090909091,
+        "recall": 0.84375,
+        "f1-score": 0.5510204081632653,
+        "support": 32.0
+      },
+      "Suicide ideation": {
+        "precision": 0.66,
+        "recall": 0.5076923076923077,
+        "f1-score": 0.5739130434782609,
+        "support": 65.0
+      },
+      "Suicide planning": {
+        "precision": 0.5454545454545454,
+        "recall": 0.3870967741935484,
+        "f1-score": 0.4528301886792453,
+        "support": 31.0
+      },
+      "Suicide attempt or death": {
+        "precision": 0.4523809523809524,
+        "recall": 0.48717948717948717,
+        "f1-score": 0.4691358024691358,
+        "support": 39.0
+      },
+      "accuracy": 0.5230769230769231,
+      "macro avg": {
+        "precision": 0.560051948051948,
+        "recall": 0.5237151423844972,
+        "f1-score": 0.5117054699533303,
+        "support": 195.0
+      },
+      "weighted avg": {
+        "precision": 0.5696214896214896,
+        "recall": 0.5230769230769231,
+        "f1-score": 0.5210082791180163,
+        "support": 195.0
+      }
+    },
+    "n_val": 195,
+    "gate_alpha_diagnostic": {
+      "mean": 0.4432382583618164,
+      "std": 0.030831223353743553,
+      "min": 0.3670133352279663,
+      "max": 0.5105594992637634,
+      "pct_below_0.1": 0.0,
+      "pct_above_0.9": 0.0
+    }
+  }
+}

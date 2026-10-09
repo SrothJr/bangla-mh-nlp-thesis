@@ -1,0 +1,195 @@
+{"image_index": 12, "true_label": 2, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 14, "true_label": 1, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 17, "true_label": 0, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 20, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 22, "true_label": 4, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 23, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 27, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 28, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 46, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 54, "true_label": 0, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 83, "true_label": 0, "predicted_label": 0, "raw_response": "1. None - no suicide-related content", "error": null}
+{"image_index": 86, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 90, "true_label": 4, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 101, "true_label": 0, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 105, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 110, "true_label": 4, "predicted_label": 1, "raw_response": "2. Wish to be dead", "error": null}
+{"image_index": 112, "true_label": 4, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 118, "true_label": 1, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 127, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 131, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 133, "true_label": 2, "predicted_label": 1, "raw_response": "2. Wish to be dead", "error": null}
+{"image_index": 137, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 141, "true_label": 4, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 142, "true_label": 0, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 144, "true_label": 3, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 154, "true_label": 4, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 156, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 162, "true_label": 4, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 167, "true_label": 0, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 175, "true_label": 0, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 185, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 190, "true_label": 0, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 192, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 193, "true_label": 4, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 197, "true_label": 4, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 201, "true_label": 0, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 203, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 205, "true_label": 4, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 210, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 212, "true_label": 3, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 217, "true_label": 0, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 220, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 240, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 249, "true_label": 2, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 252, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 255, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 261, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 263, "true_label": 2, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 264, "true_label": 4, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 270, "true_label": 4, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 281, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 287, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 293, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 299, "true_label": 1, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 301, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 307, "true_label": 3, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 316, "true_label": 4, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 325, "true_label": 0, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 331, "true_label": 0, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 334, "true_label": 4, "predicted_label": 4, "raw_response": "5. Suicide attempt or death", "error": null}
+{"image_index": 359, "true_label": 3, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 365, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 376, "true_label": 4, "predicted_label": 4, "raw_response": "5. Suicide attempt or death", "error": null}
+{"image_index": 378, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 381, "true_label": 1, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 382, "true_label": 2, "predicted_label": 4, "raw_response": "5. Suicide attempt or death", "error": null}
+{"image_index": 385, "true_label": 0, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 388, "true_label": 1, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 392, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 393, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 398, "true_label": 1, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 418, "true_label": 1, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 424, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 425, "true_label": 4, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 441, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 444, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 451, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 452, "true_label": 2, "predicted_label": 1, "raw_response": "2. Wish to be dead", "error": null}
+{"image_index": 453, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 459, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 460, "true_label": 1, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 462, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 474, "true_label": 0, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 475, "true_label": 4, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 488, "true_label": 0, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 500, "true_label": 3, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 503, "true_label": 0, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 517, "true_label": 0, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 519, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 521, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 526, "true_label": 1, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 528, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 538, "true_label": 4, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 539, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 540, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 544, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 547, "true_label": 2, "predicted_label": 1, "raw_response": "2. Wish to be dead", "error": null}
+{"image_index": 548, "true_label": 4, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 552, "true_label": 3, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 566, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 572, "true_label": 4, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 576, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 581, "true_label": 4, "predicted_label": 1, "raw_response": "2. Wish to be dead", "error": null}
+{"image_index": 586, "true_label": 4, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 589, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 592, "true_label": 2, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 594, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 609, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 610, "true_label": 2, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 622, "true_label": 4, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 632, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 637, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 640, "true_label": 4, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 642, "true_label": 1, "predicted_label": 4, "raw_response": "5. Suicide attempt or death", "error": null}
+{"image_index": 649, "true_label": 2, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 656, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 660, "true_label": 1, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 662, "true_label": 2, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 663, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 665, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 666, "true_label": 4, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 668, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 678, "true_label": 3, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 685, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 688, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 689, "true_label": 3, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 693, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 696, "true_label": 4, "predicted_label": 4, "raw_response": "5. Suicide attempt or death", "error": null}
+{"image_index": 698, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 700, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 702, "true_label": 0, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 704, "true_label": 0, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 705, "true_label": 4, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 707, "true_label": 0, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 709, "true_label": 3, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 715, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 726, "true_label": 1, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 739, "true_label": 0, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 741, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 743, "true_label": 0, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 745, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 747, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 756, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 764, "true_label": 3, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 771, "true_label": 3, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 772, "true_label": 4, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 773, "true_label": 2, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 774, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 784, "true_label": 4, "predicted_label": 4, "raw_response": "5. Suicide attempt or death", "error": null}
+{"image_index": 788, "true_label": 0, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 794, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 803, "true_label": 4, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 807, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 812, "true_label": 0, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 816, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 819, "true_label": 0, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 821, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 823, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 829, "true_label": 4, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 832, "true_label": 4, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 835, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 843, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 847, "true_label": 4, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 853, "true_label": 4, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 855, "true_label": 2, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 859, "true_label": 0, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 862, "true_label": 2, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 865, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 867, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 875, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 892, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 897, "true_label": 0, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 899, "true_label": 2, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 900, "true_label": 2, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 913, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 914, "true_label": 2, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 924, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 937, "true_label": 1, "predicted_label": 1, "raw_response": "2. Wish to be dead", "error": null}
+{"image_index": 945, "true_label": 2, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 958, "true_label": 4, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 961, "true_label": 4, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 964, "true_label": 4, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 970, "true_label": 3, "predicted_label": 3, "raw_response": "4. Suicide planning", "error": null}
+{"image_index": 977, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 987, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 990, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 991, "true_label": 2, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 994, "true_label": 2, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 995, "true_label": 1, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 996, "true_label": 3, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 1002, "true_label": 1, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 1017, "true_label": 0, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 1026, "true_label": 4, "predicted_label": 0, "raw_response": "1. None", "error": null}
+{"image_index": 1033, "true_label": 3, "predicted_label": 2, "raw_response": "3. Suicide ideation", "error": null}
+{"image_index": 1041, "true_label": 4, "predicted_label": 0, "raw_response": "1. None", "error": null}

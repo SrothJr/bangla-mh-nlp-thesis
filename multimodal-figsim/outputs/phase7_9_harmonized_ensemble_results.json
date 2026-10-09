@@ -1,0 +1,267 @@
+{
+  "results": {
+    "concat_alone": {
+      "macro_f1": 0.6424979103800984,
+      "n_models": 3,
+      "classification_report": {
+        "No expressed severity": {
+          "precision": 0.4473684210526316,
+          "recall": 0.6071428571428571,
+          "f1-score": 0.5151515151515151,
+          "support": 28.0
+        },
+        "Suicidal thought or desire": {
+          "precision": 0.7640449438202247,
+          "recall": 0.7010309278350515,
+          "f1-score": 0.7311827956989247,
+          "support": 97.0
+        },
+        "High acuity suicidal content": {
+          "precision": 0.6911764705882353,
+          "recall": 0.6714285714285714,
+          "f1-score": 0.6811594202898551,
+          "support": 70.0
+        },
+        "accuracy": 0.676923076923077,
+        "macro avg": {
+          "precision": 0.6341966118203638,
+          "recall": 0.6598674521354932,
+          "f1-score": 0.6424979103800984,
+          "support": 195.0
+        },
+        "weighted avg": {
+          "precision": 0.6924155296472408,
+          "recall": 0.676923076923077,
+          "f1-score": 0.6822058103965537,
+          "support": 195.0
+        }
+      }
+    },
+    "gated_alone": {
+      "macro_f1": 0.6330150523844352,
+      "n_models": 3,
+      "classification_report": {
+        "No expressed severity": {
+          "precision": 0.6086956521739131,
+          "recall": 0.5,
+          "f1-score": 0.5490196078431373,
+          "support": 28.0
+        },
+        "Suicidal thought or desire": {
+          "precision": 0.6788990825688074,
+          "recall": 0.7628865979381443,
+          "f1-score": 0.7184466019417476,
+          "support": 97.0
+        },
+        "High acuity suicidal content": {
+          "precision": 0.6666666666666666,
+          "recall": 0.6,
+          "f1-score": 0.631578947368421,
+          "support": 70.0
+        },
+        "accuracy": 0.6666666666666666,
+        "macro avg": {
+          "precision": 0.6514204671364623,
+          "recall": 0.6209621993127148,
+          "f1-score": 0.6330150523844352,
+          "support": 195.0
+        },
+        "weighted avg": {
+          "precision": 0.6644274663421054,
+          "recall": 0.6666666666666666,
+          "f1-score": 0.6629353626858812,
+          "support": 195.0
+        }
+      }
+    },
+    "xattn_alone": {
+      "macro_f1": 0.5982359863446235,
+      "n_models": 3,
+      "classification_report": {
+        "No expressed severity": {
+          "precision": 0.41025641025641024,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.47761194029850745,
+          "support": 28.0
+        },
+        "Suicidal thought or desire": {
+          "precision": 0.7325581395348837,
+          "recall": 0.6494845360824743,
+          "f1-score": 0.6885245901639344,
+          "support": 97.0
+        },
+        "High acuity suicidal content": {
+          "precision": 0.6285714285714286,
+          "recall": 0.6285714285714286,
+          "f1-score": 0.6285714285714286,
+          "support": 70.0
+        },
+        "accuracy": 0.6307692307692307,
+        "macro avg": {
+          "precision": 0.5904619927875742,
+          "recall": 0.6164948453608248,
+          "f1-score": 0.5982359863446235,
+          "support": 195.0
+        },
+        "weighted avg": {
+          "precision": 0.6489503539592986,
+          "recall": 0.6307692307692307,
+          "f1-score": 0.6367180490987685,
+          "support": 195.0
+        }
+      }
+    },
+    "concat+gated": {
+      "macro_f1": 0.6349347376850368,
+      "n_models": 6,
+      "classification_report": {
+        "No expressed severity": {
+          "precision": 0.47058823529411764,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.5161290322580645,
+          "support": 28.0
+        },
+        "Suicidal thought or desire": {
+          "precision": 0.7319587628865979,
+          "recall": 0.7319587628865979,
+          "f1-score": 0.7319587628865979,
+          "support": 97.0
+        },
+        "High acuity suicidal content": {
+          "precision": 0.6875,
+          "recall": 0.6285714285714286,
+          "f1-score": 0.6567164179104478,
+          "support": 70.0
+        },
+        "accuracy": 0.6717948717948717,
+        "macro avg": {
+          "precision": 0.6300156660602385,
+          "recall": 0.6439862542955326,
+          "f1-score": 0.6349347376850368,
+          "support": 195.0
+        },
+        "weighted avg": {
+          "precision": 0.6784690799396682,
+          "recall": 0.6717948717948717,
+          "f1-score": 0.6739577546510623,
+          "support": 195.0
+        }
+      }
+    },
+    "concat+xattn": {
+      "macro_f1": 0.6486810170691909,
+      "n_models": 6,
+      "classification_report": {
+        "No expressed severity": {
+          "precision": 0.43902439024390244,
+          "recall": 0.6428571428571429,
+          "f1-score": 0.5217391304347826,
+          "support": 28.0
+        },
+        "Suicidal thought or desire": {
+          "precision": 0.7628865979381443,
+          "recall": 0.7628865979381443,
+          "f1-score": 0.7628865979381443,
+          "support": 97.0
+        },
+        "High acuity suicidal content": {
+          "precision": 0.7368421052631579,
+          "recall": 0.6,
+          "f1-score": 0.6614173228346457,
+          "support": 70.0
+        },
+        "accuracy": 0.6871794871794872,
+        "macro avg": {
+          "precision": 0.6462510311484015,
+          "recall": 0.6685812469317624,
+          "f1-score": 0.6486810170691909,
+          "support": 195.0
+        },
+        "weighted avg": {
+          "precision": 0.7070340015141042,
+          "recall": 0.6871794871794872,
+          "f1-score": 0.6918354269261493,
+          "support": 195.0
+        }
+      }
+    },
+    "gated+xattn": {
+      "macro_f1": 0.6143143337463396,
+      "n_models": 6,
+      "classification_report": {
+        "No expressed severity": {
+          "precision": 0.4666666666666667,
+          "recall": 0.5,
+          "f1-score": 0.4827586206896552,
+          "support": 28.0
+        },
+        "Suicidal thought or desire": {
+          "precision": 0.696078431372549,
+          "recall": 0.7319587628865979,
+          "f1-score": 0.7135678391959799,
+          "support": 97.0
+        },
+        "High acuity suicidal content": {
+          "precision": 0.6825396825396826,
+          "recall": 0.6142857142857143,
+          "f1-score": 0.6466165413533834,
+          "support": 70.0
+        },
+        "accuracy": 0.6564102564102564,
+        "macro avg": {
+          "precision": 0.6150949268596327,
+          "recall": 0.6154148257241041,
+          "f1-score": 0.6143143337463396,
+          "support": 195.0
+        },
+        "weighted avg": {
+          "precision": 0.6582771912183677,
+          "recall": 0.6564102564102564,
+          "f1-score": 0.6563922034669603,
+          "support": 195.0
+        }
+      }
+    },
+    "concat+gated+xattn": {
+      "macro_f1": 0.6648891698019562,
+      "n_models": 9,
+      "classification_report": {
+        "No expressed severity": {
+          "precision": 0.5151515151515151,
+          "recall": 0.6071428571428571,
+          "f1-score": 0.5573770491803278,
+          "support": 28.0
+        },
+        "Suicidal thought or desire": {
+          "precision": 0.75,
+          "recall": 0.7422680412371134,
+          "f1-score": 0.7461139896373057,
+          "support": 97.0
+        },
+        "High acuity suicidal content": {
+          "precision": 0.7121212121212122,
+          "recall": 0.6714285714285714,
+          "f1-score": 0.6911764705882353,
+          "support": 70.0
+        },
+        "accuracy": 0.6974358974358974,
+        "macro avg": {
+          "precision": 0.6590909090909091,
+          "recall": 0.6736131566028473,
+          "f1-score": 0.6648891698019562,
+          "support": 195.0
+        },
+        "weighted avg": {
+          "precision": 0.7026806526806527,
+          "recall": 0.6974358974358974,
+          "f1-score": 0.6992921400668938,
+          "support": 195.0
+        }
+      }
+    }
+  },
+  "best_combination": "concat+gated+xattn",
+  "best_macro_f1": 0.6648891698019562,
+  "comparison_simple_concat_alone": 0.6425,
+  "delta_vs_simple_concat": 0.022389169801956266
+}

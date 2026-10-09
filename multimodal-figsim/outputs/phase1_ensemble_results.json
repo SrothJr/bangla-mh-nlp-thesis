@@ -1,0 +1,99 @@
+{
+  "seed_f1s": [
+    0.5117054699533303,
+    0.5004445862296961,
+    0.5089084109519977
+  ],
+  "best_single_seed_f1": 0.5117054699533303,
+  "ensemble_soft_avg": {
+    "macro_f1": 0.5102162382700939,
+    "weighted_f1": 0.5266059902290012,
+    "accuracy": 0.5333333333333333,
+    "classification_report": {
+      "None": {
+        "precision": 0.6666666666666666,
+        "recall": 0.35714285714285715,
+        "f1-score": 0.46511627906976744,
+        "support": 28.0
+      },
+      "Wish to be dead": {
+        "precision": 0.46551724137931033,
+        "recall": 0.84375,
+        "f1-score": 0.6,
+        "support": 32.0
+      },
+      "Suicide ideation": {
+        "precision": 0.6545454545454545,
+        "recall": 0.5538461538461539,
+        "f1-score": 0.6,
+        "support": 65.0
+      },
+      "Suicide planning": {
+        "precision": 0.4230769230769231,
+        "recall": 0.3548387096774194,
+        "f1-score": 0.38596491228070173,
+        "support": 31.0
+      },
+      "Suicide attempt or death": {
+        "precision": 0.4878048780487805,
+        "recall": 0.5128205128205128,
+        "f1-score": 0.5,
+        "support": 39.0
+      },
+      "accuracy": 0.5333333333333333,
+      "macro avg": {
+        "precision": 0.539522232743427,
+        "recall": 0.5244796466973887,
+        "f1-score": 0.5102162382700939,
+        "support": 195.0
+      },
+      "weighted avg": {
+        "precision": 0.5551202451053651,
+        "recall": 0.5333333333333333,
+        "f1-score": 0.5266059902290012,
+        "support": 195.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        10,
+        7,
+        2,
+        5,
+        4
+      ],
+      [
+        1,
+        27,
+        4,
+        0,
+        0
+      ],
+      [
+        2,
+        9,
+        36,
+        9,
+        9
+      ],
+      [
+        0,
+        5,
+        7,
+        11,
+        8
+      ],
+      [
+        2,
+        10,
+        6,
+        1,
+        20
+      ]
+    ]
+  },
+  "ensemble_majority_vote": {
+    "macro_f1": 0.5311453884508912
+  },
+  "delta_vs_best_single_seed": -0.0014892316832364472
+}

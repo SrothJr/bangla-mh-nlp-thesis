@@ -1,0 +1,29 @@
+# Large, regenerable embeddings (recreate via code/extract_*.py against
+# outputs/embeddings/ -- these are pure derived data, not source of truth)
+outputs/embeddings/
+
+# Trained model weights / LoRA adapters (regenerable via code/train_*.py and
+# code/phase*_*.py; too large and binary for git)
+outputs/checkpoints/
+*.pt
+*.pth
+*.safetensors
+
+# Mirrored raw FigSIM dataset + unrelated scratch/work/tmp folders from
+# another project context -- not this repo's own content, and the raw
+# images should not be redistributed via git regardless of size.
+i-h/
+
+# External datasets for the FIGSIM_HARMONIZATION_AND_PRETRAINING plan --
+# re-downloadable from their own official repos (see that doc for links).
+# BN-HIB is CC BY-NC-SA (non-commercial) -- must not be redistributed here.
+BN-HIB/
+CMBAN-master/
+
+# Python build artifacts
+__pycache__/
+*.pyc
+
+# OS cruft
+.DS_Store
+Thumbs.db

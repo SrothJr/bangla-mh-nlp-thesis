@@ -1,0 +1,101 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Best approach workflow" id="best-workflow">
+    <mxGraphModel dx="1400" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="&lt;b&gt;Best approach: six-model cross-architecture ensemble (5-class suicide severity)&lt;/b&gt;&lt;br&gt;Test set 196 memes: macro-F1 0.4984, accuracy 0.5306" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="240" y="5" width="920" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="input" value="&lt;b&gt;Bangla meme&lt;/b&gt;&lt;br&gt;image + embedded text" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="560" y="70" width="240" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="ocr" value="EasyOCR&lt;br&gt;(English reader, GPU)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="120" y="170" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="qwen" value="Qwen2.5-VL-7B (Ollama)&lt;br&gt;temp 0.2, JSON output&lt;br&gt;3 fields: cause_effect, figurative_meaning, emotional_state" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="540" y="165" width="280" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="siglip" value="SigLIP so400m-patch14-384&lt;br&gt;(frozen image encoder)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="170" width="260" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="nllb1" value="NLLB-200-3.3B&lt;br&gt;&lt;b&gt;ocr_text_bn&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="120" y="280" width="220" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="nllb2" value="NLLB-200-3.3B&lt;br&gt;&lt;b&gt;reasoning_text_bn&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="560" y="280" width="240" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="sigfeat" value="1152-d pooled vector&lt;br&gt;+ 729 × 1152 patch tokens" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="280" width="260" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e3b" value="&lt;b&gt;DAPT-BanglaBERT (frozen)&lt;/b&gt;&lt;br&gt;text = ocr_text_bn, pair = reasoning_text_bn&lt;br&gt;max_len 256, CLS → &lt;b&gt;e3b 768-d&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="330" y="400" width="300" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="stageA" value="&lt;b&gt;Stage A: contrastive alignment&lt;/b&gt;&lt;br&gt;InfoNCE, trained once then frozen&lt;br&gt;aligned text / image, 256-d each" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="760" y="400" width="280" height="65" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="gated" value="&lt;b&gt;Member type 1: gated fusion + orthogonal residual&lt;/b&gt;&lt;br&gt;3 seeds (0, 1, 2)&lt;br&gt;gate MLP → alpha; gated = alpha·text + (1−alpha)·image&lt;br&gt;i_orth = image − proj(image on text)&lt;br&gt;[LN(gated); LN(i_orth); e3b] → Linear 256 → ReLU → Dropout → Linear 5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="200" y="540" width="420" height="115" as="geometry"/>
+        </mxCell>
+        <mxCell id="xattn" value="&lt;b&gt;Member type 2: cross-attention fusion&lt;/b&gt;&lt;br&gt;3 seeds (0, 1, 2)&lt;br&gt;text tokens (256×768) → Q; patches (729×1152) → K, V&lt;br&gt;4-head attention, residual + LN, masked mean-pool&lt;br&gt;[pooled; e3b] → Linear 256 → ReLU → Dropout → Linear 5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="820" y="540" width="380" height="115" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="vote" value="&lt;b&gt;Majority vote&lt;/b&gt;&lt;br&gt;6 models, hard 5-class argmax" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="530" y="710" width="320" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="severity" value="&lt;b&gt;Suicide severity (5-class)&lt;/b&gt;&lt;br&gt;None / Wish to be dead / Ideation / Planning / Attempt or death&lt;br&gt;&lt;b&gt;Test macro-F1 0.4984, acc 0.5306, QWK 0.3857&lt;/b&gt;&lt;br&gt;Collapsed to 3 classes: acc 0.6582, macro-F1 0.6024" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="490" y="850" width="400" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="dep" value="&lt;b&gt;Depression classifier&lt;/b&gt;&lt;br&gt;DAPT-BanglaBERT + 4-class head&lt;br&gt;frozen, text-only, parity-verified&lt;br&gt;Minimum / Mild / Moderate / Severe" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="720" width="250" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="fuzzy" value="&lt;b&gt;Fuzzy-logic risk layer&lt;/b&gt;&lt;br&gt;AND = min, OR = max, argmax defuzzify&lt;br&gt;suicide side: vote fractions; depression side: softmax&lt;br&gt;rule table (11 rows, 5-class)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="490" y="990" width="400" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="risk" value="&lt;b&gt;Final risk level&lt;/b&gt;&lt;br&gt;Minimal / Low / Elevated / Critical&lt;br&gt;(exploratory, no ground truth, not clinically validated)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1120" width="400" height="65" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="notes" value="&lt;b&gt;Setup notes&lt;/b&gt;&lt;br&gt;• All encoders frozen, none fine-tuned&lt;br&gt;• Data: 973 memes = 582 train / 195 val / 196 test&lt;br&gt;• Adam lr 1e-3, wd 1e-4, hidden 256, dropout 0.2&lt;br&gt;• Loss: CE + ordinal label smoothing (tau 1.0), inverse-frequency class weights&lt;br&gt;• Early stopping on validation macro-F1&lt;br&gt;• Test set unlocked once, single pass&lt;br&gt;• Needs both modalities (no missing-modality fallback)" style="rounded=1;whiteSpace=wrap;html=1;align=left;spacingLeft=8;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="960" y="850" width="380" height="170" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="legend" value="&lt;b&gt;Legend:&lt;/b&gt; blue = frozen feature extraction; purple = alignment; green = ensemble members; yellow = combination; orange = result; teal = depression branch; red = risk layer" style="text;html=1;align=left;verticalAlign=middle;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1215" width="1100" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="a1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="input" target="ocr"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="input" target="qwen"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="input" target="siglip"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="ocr" target="nllb1"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="qwen" target="nllb2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="siglip" target="sigfeat"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="nllb1" target="e3b"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="nllb2" target="e3b"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="sigfeat" target="stageA"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a10" value="text CLS" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;dashed=1;fontSize=10;" edge="1" parent="1" source="e3b" target="stageA"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a11" value="e3b" style="endArrow=block;html=1;fontSize=10;" edge="1" parent="1" source="e3b" target="gated"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a12" value="aligned 256-d" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontSize=10;exitX=0.5;exitY=1;entryX=0.85;entryY=0;" edge="1" parent="1" source="stageA" target="gated"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a13" value="tokens + e3b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontSize=10;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="e3b" target="xattn"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a14" value="patches" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontSize=10;exitX=0.8;exitY=1;entryX=0.8;entryY=0;" edge="1" parent="1" source="sigfeat" target="xattn"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="gated" target="vote"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="xattn" target="vote"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="vote" target="severity"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a18" value="Bangla text" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontSize=10;exitX=0.25;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="nllb1" target="dep"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="severity" target="fuzzy"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a20" value="4-class softmax" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontSize=10;exitX=0.5;exitY=1;entryX=0;entryY=0.5;" edge="1" parent="1" source="dep" target="fuzzy"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="a21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="fuzzy" target="risk"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

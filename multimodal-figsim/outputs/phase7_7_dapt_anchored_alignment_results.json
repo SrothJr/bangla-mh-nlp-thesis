@@ -1,0 +1,8 @@
+{
+  "final_val_retrieval_acc": 0.025641025975346565,
+  "reference_existing_stage_a_val_retrieval_acc": 0.0513,
+  "delta": -0.025658974024653433,
+  "chance_level": 0.005128205128205128,
+  "n_trainable_params": 885504,
+  "decision": "STOP HERE -- alignment quality did not match existing Stage A, not worth downstream cost"
+}

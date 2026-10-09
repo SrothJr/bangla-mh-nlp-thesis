@@ -1,0 +1,83 @@
+{
+  "sweep_results": {
+    "default": {
+      "config": {
+        "hidden_dim": 256,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0001
+      },
+      "majority_vote_macro_f1": 0.6235660079145818
+    },
+    "hidden_dim=128": {
+      "config": {
+        "hidden_dim": 128,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0001
+      },
+      "majority_vote_macro_f1": 0.626955286903939
+    },
+    "hidden_dim=512": {
+      "config": {
+        "hidden_dim": 512,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.0001
+      },
+      "majority_vote_macro_f1": 0.6330150523844352
+    },
+    "dropout=0.1": {
+      "config": {
+        "hidden_dim": 256,
+        "dropout": 0.1,
+        "lr": 0.001,
+        "weight_decay": 0.0001
+      },
+      "majority_vote_macro_f1": 0.6196019871363179
+    },
+    "dropout=0.4": {
+      "config": {
+        "hidden_dim": 256,
+        "dropout": 0.4,
+        "lr": 0.001,
+        "weight_decay": 0.0001
+      },
+      "majority_vote_macro_f1": 0.6143865778651235
+    },
+    "lr=5e-4": {
+      "config": {
+        "hidden_dim": 256,
+        "dropout": 0.2,
+        "lr": 0.0005,
+        "weight_decay": 0.0001
+      },
+      "majority_vote_macro_f1": 0.6242991489161612
+    },
+    "lr=2e-3": {
+      "config": {
+        "hidden_dim": 256,
+        "dropout": 0.2,
+        "lr": 0.002,
+        "weight_decay": 0.0001
+      },
+      "majority_vote_macro_f1": 0.6302128886409993
+    },
+    "weight_decay=1e-3": {
+      "config": {
+        "hidden_dim": 256,
+        "dropout": 0.2,
+        "lr": 0.001,
+        "weight_decay": 0.001
+      },
+      "majority_vote_macro_f1": 0.6235660079145818
+    }
+  },
+  "best_config_name": "hidden_dim=512",
+  "best_config_macro_f1": 0.6330150523844352,
+  "comparison_simple_concat_3class": 0.6425,
+  "comparison_gated_5class_tuned_applied_asis": 0.6144,
+  "delta_vs_simple_concat": -0.009484947615564732,
+  "delta_vs_phase7_5": 0.018615052384435282,
+  "decision": "gated+orth still does not beat simple concat, even after tuning for 3-class specifically"
+}

@@ -1,0 +1,2769 @@
+{
+  "n_val": 195,
+  "risk_distribution_5class": {
+    "Minimal": 22,
+    "Low": 63,
+    "Elevated": 71,
+    "Critical": 39
+  },
+  "risk_distribution_3class": {
+    "Minimal": 35,
+    "Low": 45,
+    "Elevated": 47,
+    "Critical": 68
+  },
+  "agreement_count": 135,
+  "agreement_pct": 69.23076923076923,
+  "agreement_matrix": {
+    "Minimal->Minimal": 20,
+    "Minimal->Low": 0,
+    "Minimal->Elevated": 0,
+    "Minimal->Critical": 2,
+    "Low->Minimal": 10,
+    "Low->Low": 42,
+    "Low->Elevated": 0,
+    "Low->Critical": 11,
+    "Elevated->Minimal": 3,
+    "Elevated->Low": 2,
+    "Elevated->Elevated": 42,
+    "Elevated->Critical": 24,
+    "Critical->Minimal": 2,
+    "Critical->Low": 1,
+    "Critical->Elevated": 5,
+    "Critical->Critical": 31
+  },
+  "results_5class": [
+    {
+      "image_index": 12,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 14,
+      "suicide_pred": "None",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 17,
+      "suicide_pred": "None",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 20,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 22,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 23,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 27,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 28,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 46,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 54,
+      "suicide_pred": "None",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 83,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 86,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 90,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 101,
+      "suicide_pred": "None",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 105,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 110,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 112,
+      "suicide_pred": "None",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 118,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 127,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 131,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 133,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 137,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 141,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 142,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "None",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 144,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 154,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 156,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 162,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 167,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 175,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 185,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 190,
+      "suicide_pred": "None",
+      "suicide_true_5class": "None",
+      "depression_pred": "Mild",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 192,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 193,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 197,
+      "suicide_pred": "None",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 201,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "None",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 203,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 205,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 210,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 212,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 217,
+      "suicide_pred": "None",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 220,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 240,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 249,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 252,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 255,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 261,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 263,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 264,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 270,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 281,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 287,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 293,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 299,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 301,
+      "suicide_pred": "None",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 307,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 316,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 325,
+      "suicide_pred": "None",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 331,
+      "suicide_pred": "None",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 334,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 359,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 365,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 376,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 378,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 381,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 382,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 385,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 388,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 392,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 393,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 398,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Moderate",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 418,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 424,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 425,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 441,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 444,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 451,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 452,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 453,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 459,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 460,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 462,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 474,
+      "suicide_pred": "None",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 475,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 488,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 500,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 503,
+      "suicide_pred": "None",
+      "suicide_true_5class": "None",
+      "depression_pred": "Moderate",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 517,
+      "suicide_pred": "None",
+      "suicide_true_5class": "None",
+      "depression_pred": "Mild",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 519,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 521,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 526,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 528,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Mild",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 538,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 539,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 540,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 544,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 547,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 548,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 552,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 566,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 572,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 576,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 581,
+      "suicide_pred": "None",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 586,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 589,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 592,
+      "suicide_pred": "None",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 594,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 609,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 610,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 622,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 632,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 637,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 640,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 642,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 649,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 656,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 660,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 662,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 663,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 665,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 666,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 668,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 678,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 685,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 688,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 689,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 693,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 696,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 698,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 700,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 702,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 704,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 705,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 707,
+      "suicide_pred": "None",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 709,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 715,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 726,
+      "suicide_pred": "None",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 739,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 741,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 743,
+      "suicide_pred": "None",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 745,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 747,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 756,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 764,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 771,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 772,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 773,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 774,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 784,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 788,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 794,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 803,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 807,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 812,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "None",
+      "depression_pred": "Moderate",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 816,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 819,
+      "suicide_pred": "None",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 821,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 823,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 829,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 832,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 835,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 843,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 847,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 853,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 855,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 859,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 862,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 865,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 867,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 875,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 892,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 897,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "None",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 899,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 900,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 913,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 914,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 924,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 937,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 945,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 958,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 961,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 964,
+      "suicide_pred": "None",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 970,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 977,
+      "suicide_pred": "None",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 987,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 990,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 991,
+      "suicide_pred": "Suicide ideation",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 994,
+      "suicide_pred": "None",
+      "suicide_true_5class": "Suicide ideation",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 995,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 996,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 1002,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Wish to be dead",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 1017,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "None",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 1026,
+      "suicide_pred": "Suicide attempt or death",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 1033,
+      "suicide_pred": "Suicide planning",
+      "suicide_true_5class": "Suicide planning",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 1041,
+      "suicide_pred": "Wish to be dead",
+      "suicide_true_5class": "Suicide attempt or death",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    }
+  ],
+  "results_3class": [
+    {
+      "image_index": 12,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 14,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 17,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 20,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 22,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 23,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 27,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 28,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 46,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 54,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 83,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 86,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 90,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 101,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 105,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 110,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 112,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 118,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 127,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 131,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 133,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 137,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 141,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 142,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 144,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 154,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 156,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 162,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 167,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 175,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 185,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 190,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Mild",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 192,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 193,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 197,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 201,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 203,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 205,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 210,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 212,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 217,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 220,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 240,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 249,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 252,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 255,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 261,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 263,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 264,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 270,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 281,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 287,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 293,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 299,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 301,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 307,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 316,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 325,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 331,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 334,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 359,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 365,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 376,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 378,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 381,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 382,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 385,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 388,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 392,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 393,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 398,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Moderate",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 418,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 424,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 425,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 441,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 444,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 451,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 452,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 453,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 459,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 460,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 462,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 474,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 475,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 488,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 500,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 503,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Moderate",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 517,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Mild",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 519,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 521,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 526,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 528,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Mild",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 538,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 539,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 540,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 544,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 547,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 548,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 552,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 566,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 572,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 576,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 581,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 586,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 589,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 592,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 594,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 609,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 610,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 622,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 632,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 637,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 640,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 642,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 649,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 656,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 660,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 662,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 663,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 665,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 666,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 668,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 678,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 685,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 688,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 689,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 693,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 696,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 698,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 700,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 702,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 704,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 705,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 707,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 709,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 715,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 726,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 739,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 741,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 743,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 745,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 747,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 756,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 764,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 771,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 772,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 773,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 774,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 784,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 788,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 794,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 803,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 807,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 812,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Moderate",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 816,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 819,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 821,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 823,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 829,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 832,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 835,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 843,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 847,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 853,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 855,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 859,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 862,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 865,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 867,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 875,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 892,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 897,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 899,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 900,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 913,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 914,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 924,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 937,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 945,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 958,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 961,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 964,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 970,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 977,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 987,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 990,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 991,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Severe",
+      "crisp_risk": "Elevated"
+    },
+    {
+      "image_index": 994,
+      "suicide_pred": "No expressed severity",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Minimal"
+    },
+    {
+      "image_index": 995,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 996,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 1002,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "Suicidal thought or desire",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    },
+    {
+      "image_index": 1017,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "No expressed severity",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 1026,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 1033,
+      "suicide_pred": "High acuity suicidal content",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Severe",
+      "crisp_risk": "Critical"
+    },
+    {
+      "image_index": 1041,
+      "suicide_pred": "Suicidal thought or desire",
+      "suicide_true_3class": "High acuity suicidal content",
+      "depression_pred": "Minimum",
+      "crisp_risk": "Low"
+    }
+  ]
+}

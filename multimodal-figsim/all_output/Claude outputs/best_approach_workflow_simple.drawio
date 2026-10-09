@@ -1,0 +1,90 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Best approach - step by step" id="best-simple">
+    <mxGraphModel dx="1200" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1250" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="title" value="&lt;b&gt;Best approach, step by step&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:13px&quot;&gt;Meme in, suicide-severity level out. Read top to bottom.&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="200" y="5" width="800" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s1" value="&lt;b&gt;STEP 1: Input&lt;/b&gt;&lt;br&gt;Bangla meme (image with text)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="430" y="70" width="300" height="60" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="lbl2" value="&lt;b&gt;STEP 2: Read the meme (three things happen in parallel)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="200" y="150" width="800" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="s2a" value="&lt;b&gt;2a. Read the text&lt;/b&gt;&lt;br&gt;EasyOCR reads it, NLLB-200 translates to Bangla&lt;br&gt;&lt;i&gt;output: ocr_text_bn&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="190" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="s2b" value="&lt;b&gt;2b. Explain the meme&lt;/b&gt;&lt;br&gt;Qwen2.5-VL writes cause/effect, figurative meaning, emotion; NLLB-200 translates&lt;br&gt;&lt;i&gt;output: reasoning_text_bn&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="190" width="300" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="s2c" value="&lt;b&gt;2c. Look at the image&lt;/b&gt;&lt;br&gt;SigLIP (frozen)&lt;br&gt;&lt;i&gt;output: 1152-d image vector + 729 patch tokens&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="760" y="190" width="340" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s3" value="&lt;b&gt;STEP 3: Turn the two Bangla texts into one text vector&lt;/b&gt;&lt;br&gt;DAPT-BanglaBERT (frozen) reads ocr_text_bn + reasoning_text_bn together&lt;br&gt;&lt;i&gt;output: 768-d text vector&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="100" y="340" width="560" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s4" value="&lt;b&gt;STEP 4: Line up text and image (Stage A alignment, trained once)&lt;/b&gt;&lt;br&gt;Contrastive learning puts both vectors in one shared 256-d space, so the gate in Step 5 can mix them&lt;br&gt;&lt;i&gt;output: aligned text + aligned image&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="270" y="480" width="620" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="lbl5" value="&lt;b&gt;STEP 5: Six small classifiers predict the severity (5 classes)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="200" y="595" width="800" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="s5a" value="&lt;b&gt;Model type A: gated fusion&lt;/b&gt;&lt;br&gt;3 seeds&lt;br&gt;A learned gate blends aligned text and image; a residual keeps image detail the text lacks" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="110" y="630" width="450" height="100" as="geometry"/>
+        </mxCell>
+        <mxCell id="s5b" value="&lt;b&gt;Model type B: cross-attention&lt;/b&gt;&lt;br&gt;3 seeds&lt;br&gt;Each word looks at image patches directly (uses the patch tokens from 2c)" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="620" y="630" width="450" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s6" value="&lt;b&gt;STEP 6: Majority vote&lt;/b&gt;&lt;br&gt;The most common answer among the 6 models wins" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="410" y="780" width="340" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="s7" value="&lt;b&gt;STEP 7: RESULT (test set, 196 memes)&lt;/b&gt;&lt;br&gt;5 levels: None / Wish to be dead / Ideation / Planning / Attempt or death&lt;br&gt;&lt;b&gt;macro-F1 0.4984, accuracy 0.5306&lt;/b&gt;&lt;br&gt;Same model collapsed to 3 classes: accuracy 0.6582" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="330" y="900" width="500" height="110" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="lbl8" value="&lt;b&gt;OPTIONAL ADD-ON: combine with depression level into a risk score (exploratory, not clinically validated)&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=13;fontColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1045" width="1000" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="dep" value="&lt;b&gt;Depression classifier&lt;/b&gt;&lt;br&gt;DAPT-BanglaBERT, text only, frozen&lt;br&gt;4 levels: Minimum to Severe" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1090" width="300" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="fuzzy" value="&lt;b&gt;Fuzzy-logic rules&lt;/b&gt;&lt;br&gt;min = AND, max = OR&lt;br&gt;Severity + depression in" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="430" y="1090" width="300" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="risk" value="&lt;b&gt;Final risk level&lt;/b&gt;&lt;br&gt;Minimal / Low / Elevated / Critical" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1090" width="300" height="90" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="note" value="All encoders are frozen (never fine-tuned). Data: 582 train / 195 validation / 196 test. Test set opened once. Needs both image and text." style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1205" width="1000" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;" edge="1" parent="1" source="s1" target="s2a"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;" edge="1" parent="1" source="s1" target="s2b"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;" edge="1" parent="1" source="s1" target="s2c"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="html=1;endArrow=block;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.25;entryY=0;" edge="1" parent="1" source="s2a" target="s3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="html=1;endArrow=block;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.75;entryY=0;" edge="1" parent="1" source="s2b" target="s3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.4;entryY=0;" edge="1" parent="1" source="s3" target="s4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;exitX=0.5;exitY=1;entryX=1;entryY=0.5;" edge="1" parent="1" source="s2c" target="s4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;" edge="1" parent="1" source="s4" target="s5a"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;" edge="1" parent="1" source="s4" target="s5b"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;" edge="1" parent="1" source="s5a" target="s6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;" edge="1" parent="1" source="s5b" target="s6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;" edge="1" parent="1" source="s6" target="s7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="s7" target="fuzzy"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;dashed=1;" edge="1" parent="1" source="dep" target="fuzzy"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;strokeWidth=2;dashed=1;" edge="1" parent="1" source="fuzzy" target="risk"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

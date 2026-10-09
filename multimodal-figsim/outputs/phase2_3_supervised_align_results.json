@@ -1,0 +1,55 @@
+{
+  "seed_f1s": [
+    0.47053937696567605,
+    0.48612936002291784,
+    0.46955044584669164
+  ],
+  "majority_vote_macro_f1": 0.46821551155673535,
+  "comparison_phase1_best": 0.533,
+  "delta": -0.06478448844326468,
+  "classification_report": {
+    "None": {
+      "precision": 0.42857142857142855,
+      "recall": 0.32142857142857145,
+      "f1-score": 0.3673469387755102,
+      "support": 28.0
+    },
+    "Wish to be dead": {
+      "precision": 0.375,
+      "recall": 0.5625,
+      "f1-score": 0.45,
+      "support": 32.0
+    },
+    "Suicide ideation": {
+      "precision": 0.5925925925925926,
+      "recall": 0.49230769230769234,
+      "f1-score": 0.5378151260504201,
+      "support": 65.0
+    },
+    "Suicide planning": {
+      "precision": 0.375,
+      "recall": 0.4838709677419355,
+      "f1-score": 0.4225352112676056,
+      "support": 31.0
+    },
+    "Suicide attempt or death": {
+      "precision": 0.625,
+      "recall": 0.5128205128205128,
+      "f1-score": 0.5633802816901409,
+      "support": 39.0
+    },
+    "accuracy": 0.48205128205128206,
+    "macro avg": {
+      "precision": 0.4792328042328043,
+      "recall": 0.47458554885974247,
+      "f1-score": 0.46821551155673535,
+      "support": 195.0
+    },
+    "weighted avg": {
+      "precision": 0.5052231718898386,
+      "recall": 0.48205128205128206,
+      "f1-score": 0.48571343597027117,
+      "support": 195.0
+    }
+  }
+}
